@@ -1,8 +1,12 @@
+using System.Globalization;
 using UnityEngine;
 
 public class NPCQuest : MonoBehaviour, IInteractable // Implementa nossa interface existente!
 {
     // Enum para controlar o estado da quest
+
+    string name = "Lil Vini";
+    
     private enum QuestState { NotStarted, Started, Completed }
     private QuestState currentState = QuestState.NotStarted;
 

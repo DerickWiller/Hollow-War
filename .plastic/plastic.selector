@@ -1,4 +1,0 @@
-repository "Hollow War/Hollow War@4674121489744@cloud"
-  path "/"
-    br "/main"
-    co "/main"

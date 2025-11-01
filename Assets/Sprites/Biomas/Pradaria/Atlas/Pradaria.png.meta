@@ -1,0 +1,1105 @@
+fileFormatVersion: 2
+guid: 7569a7b19463aa0449e0ec0263c68a0b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6780975914805376954
+    second: Pradaria_0
+  - first:
+      213: -567009319572730529
+    second: Pradaria_1
+  - first:
+      213: -3823964153124585660
+    second: Pradaria_2
+  - first:
+      213: -1301317901823970668
+    second: Pradaria_3
+  - first:
+      213: 5244885685354026423
+    second: Pradaria_4
+  - first:
+      213: 6075451270804953115
+    second: Pradaria_5
+  - first:
+      213: 1575485225624113472
+    second: Pradaria_6
+  - first:
+      213: -4215225719885633102
+    second: Pradaria_7
+  - first:
+      213: 8868856617693032924
+    second: Pradaria_8
+  - first:
+      213: -810512332311032505
+    second: Pradaria_9
+  - first:
+      213: -7151749482599756959
+    second: Pradaria_10
+  - first:
+      213: -4544382229007027288
+    second: Pradaria_11
+  - first:
+      213: 9111035359571767920
+    second: Pradaria_12
+  - first:
+      213: 4053613460100712401
+    second: Pradaria_13
+  - first:
+      213: -5533181549967359839
+    second: Pradaria_14
+  - first:
+      213: -6787394794067500503
+    second: Pradaria_15
+  - first:
+      213: -3553932363540563778
+    second: Pradaria_16
+  - first:
+      213: 6289058231475313495
+    second: Pradaria_17
+  - first:
+      213: 6203704983735311635
+    second: Pradaria_18
+  - first:
+      213: -1397346259741932392
+    second: Pradaria_19
+  - first:
+      213: 485665154918038898
+    second: Pradaria_20
+  - first:
+      213: 1845625077232603722
+    second: Pradaria_21
+  - first:
+      213: 4378340954070383884
+    second: Pradaria_22
+  - first:
+      213: -8695450516148943991
+    second: Pradaria_23
+  - first:
+      213: 7630144763951601657
+    second: Pradaria_24
+  - first:
+      213: -1990382989670249344
+    second: Pradaria_25
+  - first:
+      213: -5763815461596456500
+    second: Pradaria_26
+  - first:
+      213: -6643337971403951851
+    second: Pradaria_27
+  - first:
+      213: 1892840663290490006
+    second: Pradaria_28
+  - first:
+      213: -4673959291177641048
+    second: Pradaria_29
+  - first:
+      213: 5820719351698145927
+    second: Pradaria_30
+  - first:
+      213: 7488077195123154341
+    second: Pradaria_31
+  - first:
+      213: 7587089740153114308
+    second: Pradaria_32
+  - first:
+      213: 6048215009660427483
+    second: Pradaria_33
+  - first:
+      213: 8406319163083620665
+    second: Pradaria_34
+  - first:
+      213: -5362677806594256891
+    second: Pradaria_35
+  - first:
+      213: 2417649164303344260
+    second: Pradaria_36
+  - first:
+      213: 3371588638417515784
+    second: Pradaria_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pradaria_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 495
+        width: 69
+        height: 72
+      alignment: 9
+      pivot: {x: 0.52, y: 0.67}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648cb87255225e1a0800000000000000
+      internalID: -6780975914805376954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 495
+        width: 69
+        height: 72
+      alignment: 9
+      pivot: {x: 0.52, y: 0.67}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d088a27049128f0800000000000000
+      internalID: -567009319572730529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_2
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 495
+        width: 74
+        height: 74
+      alignment: 9
+      pivot: {x: 0.5, y: 0.66}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44f7e2becdc8eeac0800000000000000
+      internalID: -3823964153124585660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_3
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 495
+        width: 74
+        height: 81
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492fce1534ac0fde0800000000000000
+      internalID: -1301317901823970668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_4
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 495
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.73}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5de030eb399c840800000000000000
+      internalID: 5244885685354026423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_5
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 495
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.735}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b18568eddb6505450800000000000000
+      internalID: 6075451270804953115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_6
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 415
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0419336277f3dd510800000000000000
+      internalID: 1575485225624113472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_7
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 415
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9602e7a828085c0800000000000000
+      internalID: -4215225719885633102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_8
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 415
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd13775ca12841b70800000000000000
+      internalID: 8868856617693032924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_9
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 415
+        width: 65
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d078af35b70c4f0800000000000000
+      internalID: -810512332311032505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_10
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 415
+        width: 65
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16bce07bcb1efbc90800000000000000
+      internalID: -7151749482599756959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_11
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 415
+        width: 61
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0.91}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3307c907c1fe0c0800000000000000
+      internalID: -4544382229007027288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_12
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 415
+        width: 61
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0.91}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0727c4f1366e07e70800000000000000
+      internalID: 9111035359571767920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_13
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 31
+        width: 195
+        height: 419
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d78b0a07f3514830800000000000000
+      internalID: 4053613460100712401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_14
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 335
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0437442b03633b0800000000000000
+      internalID: -5533181549967359839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_15
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 335
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 922654d55645ec1a0800000000000000
+      internalID: -6787394794067500503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_16
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 335
+        width: 66
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8766b4855edaec0800000000000000
+      internalID: -3553932363540563778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_17
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 335
+        width: 73
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.26}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b15d20429374750800000000000000
+      internalID: 6289058231475313495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_18
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 335
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.26}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d1dd660dcf71650800000000000000
+      internalID: 6203704983735311635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_19
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 335
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.26}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8948cdfeaf0ab9ce0800000000000000
+      internalID: -1397346259741932392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_20
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 335
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.26}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27dbcae92ed6db600800000000000000
+      internalID: 485665154918038898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_21
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 335
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42900daa3afc9910800000000000000
+      internalID: 1845625077232603722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_22
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 255
+        width: 66
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0df8e876edf2cc30800000000000000
+      internalID: 4378340954070383884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_23
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 255
+        width: 66
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98384f673dd835780800000000000000
+      internalID: -8695450516148943991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_24
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 255
+        width: 66
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5, y: 0.73}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f754209c38b3e960800000000000000
+      internalID: 7630144763951601657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_25
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 255
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c89b5673db064e0800000000000000
+      internalID: -1990382989670249344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_26
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 255
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc993ac2060d200b0800000000000000
+      internalID: -5763815461596456500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_27
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 255
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5117a9b105f1ec3a0800000000000000
+      internalID: -6643337971403951851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_28
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 255
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c28d7fd88b44a10800000000000000
+      internalID: 1892840663290490006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_29
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 255
+        width: 66
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab58b2d9c2c22fb0800000000000000
+      internalID: -4673959291177641048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_30
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 175
+        width: 66
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782c53f296957c050800000000000000
+      internalID: 5820719351698145927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_31
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 175
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5add402198efae760800000000000000
+      internalID: 7488077195123154341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_32
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 175
+        width: 66
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce46d8abe1ca4960800000000000000
+      internalID: 7587089740153114308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 175
+        width: 66
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdcdef7a1839fe350800000000000000
+      internalID: 6048215009660427483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_34
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 175
+        width: 66
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93188208dbe39a470800000000000000
+      internalID: 8406319163083620665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_35
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 175
+        width: 66
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.74}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500141592f0f395b0800000000000000
+      internalID: -5362677806594256891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_36
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 31
+        width: 162
+        height: 210
+      alignment: 9
+      pivot: {x: 0.41, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48222dd0b173d8120800000000000000
+      internalID: 2417649164303344260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pradaria_37
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 95
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.735}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8057e91d00a4ace20800000000000000
+      internalID: 3371588638417515784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 94a04145fd7ef62458706c740d4c4626
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pradaria_0: -6780975914805376954
+      Pradaria_1: -567009319572730529
+      Pradaria_10: -7151749482599756959
+      Pradaria_11: -4544382229007027288
+      Pradaria_12: 9111035359571767920
+      Pradaria_13: 4053613460100712401
+      Pradaria_14: -5533181549967359839
+      Pradaria_15: -6787394794067500503
+      Pradaria_16: -3553932363540563778
+      Pradaria_17: 6289058231475313495
+      Pradaria_18: 6203704983735311635
+      Pradaria_19: -1397346259741932392
+      Pradaria_2: -3823964153124585660
+      Pradaria_20: 485665154918038898
+      Pradaria_21: 1845625077232603722
+      Pradaria_22: 4378340954070383884
+      Pradaria_23: -8695450516148943991
+      Pradaria_24: 7630144763951601657
+      Pradaria_25: -1990382989670249344
+      Pradaria_26: -5763815461596456500
+      Pradaria_27: -6643337971403951851
+      Pradaria_28: 1892840663290490006
+      Pradaria_29: -4673959291177641048
+      Pradaria_3: -1301317901823970668
+      Pradaria_30: 5820719351698145927
+      Pradaria_31: 7488077195123154341
+      Pradaria_32: 7587089740153114308
+      Pradaria_33: 6048215009660427483
+      Pradaria_34: 8406319163083620665
+      Pradaria_35: -5362677806594256891
+      Pradaria_36: 2417649164303344260
+      Pradaria_37: 3371588638417515784
+      Pradaria_4: 5244885685354026423
+      Pradaria_5: 6075451270804953115
+      Pradaria_6: 1575485225624113472
+      Pradaria_7: -4215225719885633102
+      Pradaria_8: 8868856617693032924
+      Pradaria_9: -810512332311032505
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

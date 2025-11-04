@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 4482398433974406426}
   - component: {fileID: 3971873753629066388}
   m_Layer: 0
-  m_Name: teste
+  m_Name: Skeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,9 +523,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6688472471738840194}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 58202d1d59a341d4d8ae32433de57e49, type: 2}
+  m_Controller: {fileID: 9100000, guid: b71e98b66c0e44b289c316f14a86a5ad, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4700f3434e6cb184989f595a2480c048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  stats: {fileID: 11400000, guid: b7ee6b28a873b2e49b9bd5037fc35552, type: 2}
+  stats: {fileID: 11400000, guid: aa51613f2f5174a1d892edb6b63552ae, type: 2}
 --- !u!114 &3971873753629066388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,7 +608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b1a58f602b659d4ea9417054fea861f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
-  stats: {fileID: 11400000, guid: b7ee6b28a873b2e49b9bd5037fc35552, type: 2}
+  stats: {fileID: 11400000, guid: aa51613f2f5174a1d892edb6b63552ae, type: 2}
   hitboxN: {fileID: 7648115132566251871}
   hitboxS: {fileID: 1316469110603148231}
   hitboxE: {fileID: 7467804952577554682}

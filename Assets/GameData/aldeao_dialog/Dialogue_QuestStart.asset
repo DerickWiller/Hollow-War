@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_QuestStart
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   talkScript:
-  - name: Aldeao
+  - name: "Alde\xE3o"
     text: "Ol\xE1 guerreiro, voc\xEA parece forte, preciso de uma \xE1rvore rosa
       para fabricar um rem\xE9dio, voc\xEA pode me ajudar?"
   - name: Goblin

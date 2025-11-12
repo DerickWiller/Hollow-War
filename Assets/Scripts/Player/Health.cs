@@ -38,11 +38,23 @@ public class Health : MonoBehaviour
         // Mais tarde, você pode adicionar animações de morte, efeitos, etc.
 
         gameObject.SetActive(false);
-         
-        SceneManager.LoadScene("Overworld");
 
-        // Carrega a segunda cena sem descarregar a primeira
-        SceneManager.LoadScene("Pradaria", LoadSceneMode.Additive);
+
+        // 2. Notifica o Game Manager que o personagem perdeu uma vida
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.PersonagemMorreu();
+            
+        }
+        else
+        {
+            // Caso de erro: se não encontrar o Game Manager, volte ao comportamento anterior
+            SceneManager.LoadScene("Overworld");
+            SceneManager.LoadScene("Pradaria", LoadSceneMode.Additive);
+        }
+
+        
+        
     }
 
 

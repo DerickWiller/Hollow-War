@@ -55,7 +55,8 @@ public class Health : MonoBehaviour
         else
         {
             Debug.LogError("❌ GameManager não encontrado! Recarregando cena.");
-            SceneManager.LoadScene("Overworld"); 
+            SceneManager.LoadScene("Overworld");
+
         }
     }
 

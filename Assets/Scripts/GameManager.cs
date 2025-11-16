@@ -261,7 +261,7 @@ public class GameManager : MonoBehaviour
         // Se o painel estiver ativo, o jogo está pausado (Time.timeScale = 0f)
         if (painelGameOver != null && painelGameOver.activeSelf && Input.GetKeyDown(KeyCode.R))
         {
-            ReiniciarJogo();
+            SceneManager.LoadScene("Abertura");
         }
     }
 }

@@ -65,7 +65,7 @@ public class SkeletonKing_Health : MonoBehaviour
         Debug.Log("Boss Morreu!");
         animator.SetTrigger("Die");
         aiScript.enabled = false; 
-        GetComponent<CapsuleCollider2D>().enabled = false; 
+        GetComponent<BoxCollider2D>().enabled = false;
         
         Transform hurtbox = transform.Find("Hurtbox");
         if(hurtbox != null)

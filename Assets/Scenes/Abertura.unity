@@ -243,8 +243,8 @@ MonoBehaviour:
   textoPrologo: {fileID: 527189874}
   painelFinal: {fileID: 769914978}
   audioIntro: {fileID: 1202612886}
-  tempoTextoInicial: 2
-  tempoPrologo: 5
+  tempoTextoInicial: 3
+  tempoPrologo: 18
 --- !u!1 &527189872
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,14 +302,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "No sombrio mundo de Thar\u2019khal, uma guerra antiga entre trolls e orcs
-    destr\xF3i tudo em seu caminho.\nEntre as cinzas desse conflito, humanos, elfos
-    e goblins lutam apenas para sobreviver.\n\nNa pequena vila goblin, a fome e a
-    doen\xE7a amea\xE7am o fim do povo.\nMas uma antiga lenda fala sobre o Mapa do
-    Mundo, um artefato capaz de revelar rotas seguras, alimentos e ervas raras.\n\nQuando
-    um jovem goblin encontra uma pista sobre o paradeiro desse mapa perdido, ele
-    inicia uma jornada perigosa \u2014\nn\xE3o apenas para salvar a si mesmo, mas
-    para garantir o futuro de toda a sua ra\xE7a..."
+  m_text: "No sombrio reino de Thar\u2019khal, uma guerra ancestral entre trolls
+    e orcs reduziu o mundo a ru\xEDnas. Nos escombros dessa destrui\xE7\xE3o, humanos,
+    elfos e goblins lutam n\xE3o por gl\xF3ria, mas pela sobreviv\xEAncia.\n\nNa
+    isolada e fr\xE1gil vila dos goblins, a fome e a doen\xE7a amea\xE7am acabar
+    com todo o seu povo. Por\xE9m, uma antiga profecia fala sobre o lend\xE1rio Mapa
+    do Mundo: um artefato m\xEDtico capaz de revelar caminhos seguros, abund\xE2ncia
+    de alimentos e ervas medicinais raras.\n\nQuando um jovem goblin descobre uma
+    pista sobre o paradeiro desse mapa perdido, ele decide se tornar o her\xF3i que
+    sua vila tanto precisa. Mas antes de partir em sua busca, ele deve provar seu
+    valor. Treinado pelos mais s\xE1bios e habilidosos da aldeia, ele encara um campo
+    de treinamento hostil, repleto de perigos, monstros e desafios que testar\xE3o
+    sua ast\xFAcia e coragem.\n\nAo explorar essas terras trai\xE7oeiras e coletar
+    artefatos m\xE1gicos que o fortalecer\xE3o, seu destino come\xE7a a ser tra\xE7ado:
+    ele n\xE3o luta apenas por si mesmo, mas pelo futuro de todo o seu povo."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -336,8 +342,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
-  m_fontSizeBase: 38
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

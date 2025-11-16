@@ -3,18 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    // VARIÁVEIS PÚBLICAS (Aparecerão no Inspector)
-
-    // GameObject é o tipo de objeto que representa um painel inteiro na sua UI.
+    // Conectados no Inspector
     public GameObject painelPausaUI;
     public GameObject painelComandosUI;
 
-    // Variável para rastrear o estado de pausa.
     public static bool JogoEstaPausado = false;
 
     void Update()
     {
-        // Detecta a tecla Escape
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (JogoEstaPausado)
@@ -28,52 +24,54 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    // Chamada pela tecla ESC
     public void PausarJogo()
     {
-        painelPausaUI.SetActive(true); // Ativa o painel: Torna-o visível
-        painelComandosUI.SetActive(false); // Garante que o painel de comandos esteja escondido
-        Time.timeScale = 0f; // Pausa o tempo do jogo
+        painelPausaUI.SetActive(true); // Ativa o menu principal
+        painelComandosUI.SetActive(false); // Garante que o sub-menu esteja escondido
+        Time.timeScale = 0f; // PAUSA O JOGO
         JogoEstaPausado = true;
     }
 
+    // Chamada pelo Botão JOGAR
     public void ContinuarJogo()
     {
-        painelPausaUI.SetActive(false); // Desativa o painel: Torna-o invisível
+        painelPausaUI.SetActive(false);
         painelComandosUI.SetActive(false);
-        Time.timeScale = 1f; // Volta o tempo normal
+        Time.timeScale = 1f; // RETORNA O JOGO
         JogoEstaPausado = false;
+
+        // Se o player estiver desativado por causa da morte, reativa-o (boa prática)
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null && !player.activeSelf)
+        {
+            player.SetActive(true);
+        }
     }
 
-    // PauseMenu.cs
-
-    // ... (seus métodos anteriores)
-
-    // Chamada APENAS pelo Botão "COMANDOS"
+    // Chamada pelo Botão COMANDOS
     public void AbrirPainelComandos()
     {
-        painelPausaUI.SetActive(false); // Esconde o painel principal (pergaminho)
-        painelComandosUI.SetActive(true); // Mostra o painel de comandos
+        painelPausaUI.SetActive(false); // Esconde o pergaminho
+        painelComandosUI.SetActive(true); // Mostra o sub-menu
     }
 
-    // Chamada APENAS pelo Botão "VOLTAR"
+    // Chamada pelo Botão VOLTAR (no sub-menu)
     public void FecharPainelComandos()
     {
-        painelComandosUI.SetActive(false); // Esconde o painel de comandos
-        painelPausaUI.SetActive(true); // Mostra o painel principal (pergaminho)
+        painelComandosUI.SetActive(false); // Esconde o sub-menu
+        painelPausaUI.SetActive(true); // Mostra o pergaminho
     }
 
+    // Chamada pelo Botão SAIR
     public void SairDoJogo()
     {
         Time.timeScale = 1f;
-
 #if UNITY_EDITOR
         Debug.Log("O jogo foi encerrado (no Editor)");
-        // Para simular o encerramento no Editor
         UnityEditor.EditorApplication.isPlaying = false;
 #else
-            // Fecha o aplicativo no build final
             Application.Quit();
 #endif
     }
-
 }

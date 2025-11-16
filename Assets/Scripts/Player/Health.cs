@@ -8,6 +8,8 @@ public class Health : MonoBehaviour
 
     public Transform healthBar; // barra verde
     public GameObject healthBarObject; // objeto pai das barras
+    public static Vector3 lastDeathPosition; // armazena posição do player antes de morrer
+
 
 
     private Vector3 healthBarScale;
@@ -18,6 +20,13 @@ public class Health : MonoBehaviour
         healthBarScale = healthBar.localScale;
         healthPercent = healthBarScale.x / currentHealth;
     }
+
+    public void RestoreHealthFull()
+    {
+        currentHealth = maxHealth;
+        UpdateHealthbar();
+    }
+
 
     public void TakeDamage(int damage)
     {
@@ -33,6 +42,9 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
+
+        lastDeathPosition = transform.position;
+
         Debug.Log(gameObject.name + " morreu.");
         // Por enquanto, vamos apenas desativar o objeto.
         // Mais tarde, você pode adicionar animações de morte, efeitos, etc.

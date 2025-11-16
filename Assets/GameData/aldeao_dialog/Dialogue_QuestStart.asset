@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   talkScript:
   - name: "Alde\xE3o"
-    text: "Ol\xE1 guerreiro, voc\xEA parece forte, preciso de uma \xE1rvore rosa
-      para fabricar um rem\xE9dio, voc\xEA pode me ajudar?"
+    text: "Ol\xE1 guerreiro, voc\xEA parece forte, preciso de um dente localizado
+      no morro dos roedores para a constru\xE7\xE3o de uma armadilha"
   - name: Goblin
-    text: Claro que posso, me informe onde encontra-la
+    text: Claro que posso te ajudar
   - name: "Alde\xE3o"
     text: "Ela est\xE1 localizada no centro da ilha, mas cuidado com os ratos, eles
       s\xE3o assustadores"

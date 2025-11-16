@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   talkScript:
   - name: Goblin
-    text: Toma ai apressadinho, vai fazer seu remedio
+    text: Toma ai apressadinho, vai fazer sua armadilha
   - name: "Alde\xE3o"
     text: Sou extremamente grato, obrigado pela ajuda
   - name: "Alde\xE3o"

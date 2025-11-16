@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   talkScript:
   - name: "Alde\xE3o"
-    text: "E ai, estou esperando, meus descendentes est\xE3o morrendo"
+    text: E ai, estou esperando, preciso daquele dente
   - name: Goblin
-    text: "Ta achando que \xE9 pastel frito? Eu tava tirando uma sonequinha para
-      recarregar as energias"
+    text: "Ta achando que \xE9 pastel frito? Eu tava dando um rol\xEA pelo mapa"
   - name: "Alde\xE3o"
-    text: "Voc\xEA \xE9 a nossa \xFAltima esperan\xE7a, por favor nos ajude"
+    text: "Voc\xEA \xE9 a minha \xFAltima esperan\xE7a, por favor me ajude"
   - name: Goblin
-    text: "J\xE1 que voc\xEA insiste, vou ver se encontro essa tal \xE1rvore"
+    text: "J\xE1 que voc\xEA insiste, vou ver se encontro esse tal dente"

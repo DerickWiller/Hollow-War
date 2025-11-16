@@ -1183,51 +1183,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 858d4726c64754f58a57f8e839528bb9, type: 3}
---- !u!1 &653066983
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 653066985}
-  - component: {fileID: 653066984}
-  m_Layer: 0
-  m_Name: RespawnManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &653066984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 653066983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9f1215c2379e4435a881fcc19dc21f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RespawnManager
-  respawnPoints: []
---- !u!4 &653066985
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 653066983}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.46247, y: -5.14419, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &664278160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,11 +1749,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1576234531150604596, guid: 858d4726c64754f58a57f8e839528bb9, type: 3}
   m_PrefabInstance: {fileID: 794046920}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &785106632 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8077884366033280337, guid: 461511ff58906ff4e9a69c69e63dc48a, type: 3}
-  m_PrefabInstance: {fileID: 2934824482826274500}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &794046920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2277,37 +2227,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f69024c88f3b485785151cb4fb11186, type: 3}
---- !u!1 &921873752
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 921873753}
-  m_Layer: 0
-  m_Name: RespawnAldeao
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &921873753
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921873752}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.04, y: -1.44, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2036984048}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &936990379
 GameObject:
   m_ObjectHideFlags: 0
@@ -2959,10 +2878,9 @@ MonoBehaviour:
   dialogueNoItem: {fileID: 11400000, guid: 4bcf8e95c4e674f4ca7fe8a8bddd8b72, type: 2}
   dialogueCompleted: {fileID: 11400000, guid: 11b2680360e0c4d96aef9b3f03c5fa2b, type: 2}
   dialogueCompletedNoItem: {fileID: 11400000, guid: ec2cc0ea9dd60437abde00eb66034aef, type: 2}
-  state: 0
   requiredItem: {fileID: 11400000, guid: d70612cc29343b941a067dfa18355c36, type: 2}
   rewardItem: {fileID: 0}
-  npcId: 1
+  npcId: 
 --- !u!61 &1217252276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3516,51 +3434,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 144603233390153703, guid: 8f69024c88f3b485785151cb4fb11186, type: 3}
   m_PrefabInstance: {fileID: 130567441}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1424328618
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1424328620}
-  - component: {fileID: 1424328619}
-  m_Layer: 0
-  m_Name: RespawnManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1424328619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424328618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9f1215c2379e4435a881fcc19dc21f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RespawnManager
-  respawnPoints: []
---- !u!4 &1424328620
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424328618}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.88029, y: -2.83962, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1426205384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4062,6 +3935,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1007438691204305264, guid: 1078955ce59764462aa6533433b987f3, type: 3}
   m_PrefabInstance: {fileID: 2048782301}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1787721280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1787721282}
+  - component: {fileID: 1787721281}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1787721281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787721280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7ab9ad9a1bd79143ab346f89e226233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  masterVolume: 10
+  sfxVolume: 0.8
+--- !u!4 &1787721282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787721280}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 25.70139, y: -8.96209, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1799565186 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1576234531150604596, guid: 858d4726c64754f58a57f8e839528bb9, type: 3}
@@ -4871,38 +4790,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 144603233390153703, guid: 8f69024c88f3b485785151cb4fb11186, type: 3}
   m_PrefabInstance: {fileID: 1466361565}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2036984047
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2036984048}
-  m_Layer: 0
-  m_Name: Respawns
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2036984048
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036984047}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.88029, y: -2.83962, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 921873753}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2048596104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1576234531150604596, guid: 858d4726c64754f58a57f8e839528bb9, type: 3}
@@ -5294,14 +5181,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1053450038124840631, guid: d9692006ae78447b3a7877eae1807c5d, type: 3}
-      propertyPath: npcId
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1053450038124840631, guid: d9692006ae78447b3a7877eae1807c5d, type: 3}
-      propertyPath: dialogueNoItem
-      value: 
-      objectReference: {fileID: 11400000, guid: e52d459918bbe46c0bdca42cb4209a22, type: 2}
-    - target: {fileID: 1053450038124840631, guid: d9692006ae78447b3a7877eae1807c5d, type: 3}
       propertyPath: dialogueSystem
       value: 
       objectReference: {fileID: 1814084548}
@@ -5362,6 +5241,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 679495262275536558, guid: 461511ff58906ff4e9a69c69e63dc48a, type: 3}
+      propertyPath: attackSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 102a4f5c4e883f346a4864db7000d3ec, type: 3}
+    - target: {fileID: 679495262275536558, guid: 461511ff58906ff4e9a69c69e63dc48a, type: 3}
+      propertyPath: footstepLoop
+      value: 
+      objectReference: {fileID: 8300000, guid: 51dc8dad9c9484c32bbb3b31e2329070, type: 3}
     - target: {fileID: 3667139405868857250, guid: 461511ff58906ff4e9a69c69e63dc48a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.9
@@ -5423,10 +5310,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 6641611455712547711, guid: 864fd950461ae1c428fb56309e0e98ab, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 785106632}
     - target: {fileID: 7526761343368364557, guid: 864fd950461ae1c428fb56309e0e98ab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5492,6 +5375,4 @@ SceneRoots:
   - {fileID: 1041989926}
   - {fileID: 3252227785091704788}
   - {fileID: 1885211749}
-  - {fileID: 1424328620}
-  - {fileID: 2036984048}
-  - {fileID: 653066985}
+  - {fileID: 1787721282}

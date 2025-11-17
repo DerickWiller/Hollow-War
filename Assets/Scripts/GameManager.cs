@@ -58,6 +58,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("🎮 GameManager.Start() iniciado");
+        
         if (painelGameOver != null)
         {
             painelGameOver.SetActive(false);
@@ -173,14 +175,30 @@ public class GameManager : MonoBehaviour
 
     void GameOver()
     {
+        Debug.Log("💀 GAME OVER ACIONADO!");
+        
         if (painelGameOver != null)
         {
             painelGameOver.SetActive(true);
             Time.timeScale = 0f;
         }
 
+        // 🔄 Resetar modificadores do PlayerController
+        Debug.Log("🔄 Resetando modificadores de stats...");
+        PlayerController playerController = FindObjectOfType<PlayerController>();
+        if (playerController != null)
+        {
+            playerController.ResetModifiers();
+        }
+        else
+        {
+            Debug.LogWarning("⚠️ PlayerController não encontrado para resetar modificadores!");
+        }
+
+        // Disparar evento de Game Over (NPCQuest irá resetar as quests)
         if (OnGameOver != null)
         {
+            Debug.Log("📢 Disparando evento OnGameOver...");
             OnGameOver();
         }
 
@@ -246,6 +264,8 @@ public class GameManager : MonoBehaviour
 
     public void ReiniciarJogo()
     {
+        Debug.Log("🔄 Reiniciando jogo...");
+        
         Time.timeScale = 1f;
         vidasAtuais = 3;
         ResetAllQuests();
@@ -253,7 +273,13 @@ public class GameManager : MonoBehaviour
         hasCheckpoint = false;
         lastCheckpointPosition = Vector3.zero;
 
-        
+        // 🔄 Resetar modificadores do PlayerController ANTES de destruir
+        PlayerController playerController = FindObjectOfType<PlayerController>();
+        if (playerController != null)
+        {
+            playerController.ResetModifiers();
+            Debug.Log("✅ Modificadores resetados antes de reiniciar o jogo.");
+        }
 
         if (painelGameOver != null)
         {
@@ -263,10 +289,8 @@ public class GameManager : MonoBehaviour
         Instance = null;
         SceneManager.sceneLoaded -= OnSceneLoaded;
         Destroy(gameObject);
-        // ------------------------------------------------------------------
 
-        // 🎯 O NOVO COMPORTAMENTO: CARREGA APENAS A CENA DE ABERTURA.
-        // O script GameIntroTMP irá lidar com o carregamento do Overworld/Pradaria.
+        // 🎯 Carrega a cena de abertura
         SceneManager.LoadScene("Abertura");
     }
 
@@ -275,15 +299,11 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    // GameManager.cs (Update CORRIGIDO)
-
     void Update()
     {
         // Verifica se a tela de Game Over está ativa E se a tecla R foi pressionada
         if (painelGameOver != null && painelGameOver.activeSelf && Input.GetKeyDown(KeyCode.R))
         {
-            // ✅ CORRETO: Chama a função que reseta TUDO (vidas, quests, tempo) 
-            // antes de carregar a cena.
             ReiniciarJogo();
         }
     }

@@ -312,6 +312,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ee2171e2ecedaf47bc655b7887d9375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DetectionZone
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  detectionRate: 0.2
 --- !u!1 &8022897317712205936
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,6 +796,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   stats: {fileID: 11400000, guid: b7ee6b28a873b2e49b9bd5037fc35552, type: 2}
+  damageSound: {fileID: 0}
+  damageVolume: 1
 --- !u!114 &5631160384208500674
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -134,7 +134,12 @@ public class EnemyAI : MonoBehaviour
         UpdateAnimationFacing(direction);
         animator.SetTrigger("Attack");
 
-        // 3. Windup (Delay antes do dano)
+        // 🎵 Reproduz o som de ataque
+        if (AudioManager.Instance != null && attackSound != null)
+        {
+            AudioManager.Instance.PlaySound(attackSound, transform.position, attackVolume);
+        }
+
         yield return new WaitForSeconds(stats.attackHitboxDelay);
 
         // 4. Ativa Hitbox

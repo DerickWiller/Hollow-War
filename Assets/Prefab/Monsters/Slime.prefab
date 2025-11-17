@@ -396,7 +396,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.59375, y: 0.625}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -436,6 +436,8 @@ MonoBehaviour:
   hitboxS: {fileID: 8312053582724341257}
   hitboxE: {fileID: 6289161483833060064}
   hitboxW: {fileID: 7306302859354407714}
+  attackSound: {fileID: 8300000, guid: e4e98a5426678274fab94f44e771fc21, type: 3}
+  attackVolume: 1
 --- !u!1 &3667811590244843738
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +519,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ee2171e2ecedaf47bc655b7887d9375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DetectionZone
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  detectionRate: 0.2
 --- !u!1 &6289161483833060064
 GameObject:
   m_ObjectHideFlags: 0

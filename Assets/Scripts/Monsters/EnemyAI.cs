@@ -12,8 +12,14 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private GameObject hitboxE;
     [SerializeField] private GameObject hitboxW;
     
-    // Componentes
-    private Transform currentTarget; 
+    [Header("Audio")]
+    [SerializeField] private AudioClip attackSound;
+    [Range(0f, 2f)]
+    [SerializeField] private float attackVolume = 1f;
+    
+    // Componentes e Variáveis
+    private Transform player; // Apenas uma referência de segurança
+    private Transform currentTarget; // O ALVO ATUAL (Decoy ou Player)
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
@@ -129,7 +135,12 @@ public class EnemyAI : MonoBehaviour
         UpdateAnimationFacing(direction);
         animator.SetTrigger("Attack");
 
-        // Delay antes do Hitbox (Windup)
+        // 🎵 Reproduz o som de ataque
+        if (AudioManager.Instance != null && attackSound != null)
+        {
+            AudioManager.Instance.PlaySound(attackSound, transform.position, attackVolume);
+        }
+
         yield return new WaitForSeconds(stats.attackHitboxDelay);
 
         // Ativa Hitbox

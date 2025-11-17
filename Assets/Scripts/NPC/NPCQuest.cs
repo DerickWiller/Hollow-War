@@ -24,6 +24,16 @@ public class NPCQuest : MonoBehaviour, IInteractable
     [Tooltip("ID único para salvar o estado da quest.")]
     [SerializeField] private string npcId;
 
+    [Header("🌟 Power-up ao Completar Quest")]
+    [Tooltip("Se marcado, ao completar esta quest os stats do jogador serão aumentados.")]
+    [SerializeField] private bool grantsPowerUp = false;
+    
+    [SerializeField] private float moveSpeedBonus = 0f;
+    [SerializeField] private int maxHealthBonus = 0;
+    [SerializeField] private int attackDamageBonus = 0;
+    [SerializeField] private float decoyCooldownReduction = 0f;
+    [SerializeField] private float decoyDurationBonus = 0f;
+
     void OnEnable() 
     {
         GameManager.OnGameOver += ResetQuestOnGameOver;
@@ -44,12 +54,10 @@ public class NPCQuest : MonoBehaviour, IInteractable
         LoadQuestStateFromGameManager();
     }
     
-    // Método auxiliar para usar o UIManager
     private void ShowGlobalQuestMessage(string message)
     {
         if (UIManager.Instance != null)
         {
-            // Mensagens de quest com 3 segundos de duração.
             UIManager.Instance.ShowGlobalMessage(message, 3.0f); 
         }
         else
@@ -64,7 +72,6 @@ public class NPCQuest : MonoBehaviour, IInteractable
         SaveQuestStateToGameManager();
         Debug.Log($"Quest do NPC {gameObject.name} resetada devido ao Game Over.");
     }
-
 
     void LoadQuestStateFromGameManager()
     {
@@ -91,10 +98,10 @@ public class NPCQuest : MonoBehaviour, IInteractable
     {
         switch (state) 
         {
-            case QuestState.NotStarted: return "Falar";
-            case QuestState.Started: return "Entregar Item";
+            case QuestState.NotStarted: return "Aperte E para Falar";
+            case QuestState.Started: return "Aperte E para Entregar Item";
             case QuestState.CompletedNoItem:
-            case QuestState.Completed: return "Conversar";
+            case QuestState.Completed: return "Aperte E para Conversar";
             default: return "Interagir";
         }
     }
@@ -121,7 +128,6 @@ public class NPCQuest : MonoBehaviour, IInteractable
             state = QuestState.Started;
             SaveQuestStateToGameManager();
             
-            // 🌟 INSTRUÇÃO: O que fazer após iniciar a quest
             ShowGlobalQuestMessage($"INSTRUÇÃO: Você precisa encontrar '{requiredItem.itemName}'.");
         } 
         else 
@@ -144,7 +150,13 @@ public class NPCQuest : MonoBehaviour, IInteractable
                 rewardMessage = $" Recompensa: {rewardItem.itemName}!";
             }
             
-            // 🌟 INSTRUÇÃO: Feedback de sucesso
+            // 🌟 APLICAR POWER-UP se esta quest concede
+            if (grantsPowerUp)
+            {
+                ApplyPowerUp();
+                rewardMessage += " ⚡ PODERES AUMENTADOS!";
+            }
+            
             ShowGlobalQuestMessage($"Quest CONCLUÍDA!{rewardMessage}");
 
             dialogueSystem.SetDialogue(dialogueCompleted);
@@ -153,7 +165,6 @@ public class NPCQuest : MonoBehaviour, IInteractable
         } 
         else 
         {
-            // 🌟 INSTRUÇÃO: Feedback de item faltando
             ShowGlobalQuestMessage($"INSTRUÇÃO: Eu ainda estou esperando pelo '{requiredItem.itemName}'.");
             
             dialogueSystem.SetDialogue(dialogueNoItem);
@@ -161,12 +172,32 @@ public class NPCQuest : MonoBehaviour, IInteractable
         }
     }
 
+    void ApplyPowerUp()
+    {
+        // Encontrar o PlayerController na cena
+        PlayerController playerController = FindObjectOfType<PlayerController>();
+        
+        if (playerController == null)
+        {
+            Debug.LogError("❌ PlayerController não encontrado na cena!");
+            return;
+        }
+
+        // ✅ SOLUÇÃO SIMPLES: Chamar o método público ApplyPowerUp
+        playerController.ApplyPowerUp(
+            moveSpeedBonus,
+            maxHealthBonus,
+            attackDamageBonus,
+            decoyCooldownReduction,
+            decoyDurationBonus
+        );
+    }
+
     void ShowCompletionDialogue() 
     {
         dialogueSystem.SetDialogue(dialogueCompleted);
         dialogueSystem.StartDialogue();
         
-        // 🌟 INSTRUÇÃO: Quest completa
         ShowGlobalQuestMessage("Quest concluída. Não há mais tarefas aqui.");
     }
 
@@ -177,7 +208,6 @@ public class NPCQuest : MonoBehaviour, IInteractable
             dialogueSystem.SetDialogue(dialogueCompletedNoItem);
             dialogueSystem.StartDialogue();
             
-            // 🌟 INSTRUÇÃO: Quest finalizada
             ShowGlobalQuestMessage("Missão finalizada. Siga para a próxima aventura!");
         }
     }

@@ -14,14 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonsterStats
   maxHealth: 3
   moveSpeed: 2
-  attackDamage: 3
-  detectionRadius: 5
+  attackDamage: 2
+  detectionRadius: 3
   attackRadius: 1
-  stopDistance: 0.8
-  attackCooldown: 2
-  attackHitboxDelay: 0.4
+  attackCooldown: 3
+  attackHitboxDelay: 0.2
   attackHitboxActiveTime: 0.3
-  attackRecovery: 0.8
-  knockbackForce: 5
+  knockbackForce: 3
   knockbackDuration: 0.4
   flashDuration: 0.1

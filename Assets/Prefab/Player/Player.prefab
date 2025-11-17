@@ -939,8 +939,18 @@ MonoBehaviour:
   attackSound: {fileID: 0}
   footstepLoop: {fileID: 0}
   footstepVolume: 0.5
+  daggerPrefab: {fileID: 0}
+  daggerSpawnOffset: 0.5
+  daggerThrowSound: {fileID: 0}
   decoyPrefab: {fileID: 0}
   decoySpawnOffset: 1
+  moveSpeedModifier: 0
+  maxHealthModifier: 0
+  attackDamageModifier: 0
+  daggerDamageModifier: 0
+  daggerCooldownModifier: 0
+  decoyCooldownModifier: 0
+  decoyDurationModifier: 0
 --- !u!114 &4868371261177352467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -968,6 +978,8 @@ MonoBehaviour:
   maxHealth: 20
   healthBar: {fileID: 3926551872967778659}
   healthBarObject: {fileID: 6040838601206287152}
+  damageSound: {fileID: 0}
+  damageVolume: 1
 --- !u!114 &4497897643368438276
 MonoBehaviour:
   m_ObjectHideFlags: 0

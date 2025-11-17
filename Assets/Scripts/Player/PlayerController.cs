@@ -19,6 +19,14 @@ public class PlayerController : MonoBehaviour
     [Range(0f, 2f)]
     [SerializeField] private float footstepVolume = 0.5f;
 
+    [Header("Skill: Dagger")]
+    [SerializeField] private GameObject daggerPrefab;
+    [SerializeField] private float daggerSpawnOffset = 0.5f;
+    [SerializeField] private AudioClip daggerThrowSound;
+    
+    private float daggerCooldownTimer = 0f;
+    private bool isDaggerOnCooldown = false;
+
     [Header("Skill: Decoy")]
     [SerializeField] private GameObject decoyPrefab;
     [SerializeField] private float decoySpawnOffset = 1.0f;
@@ -31,6 +39,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeedModifier = 0f;
     [SerializeField] private int maxHealthModifier = 0;
     [SerializeField] private int attackDamageModifier = 0;
+    [SerializeField] private int daggerDamageModifier = 0;
+    [SerializeField] private float daggerCooldownModifier = 0f;
     [SerializeField] private float decoyCooldownModifier = 0f;
     [SerializeField] private float decoyDurationModifier = 0f;
 
@@ -38,6 +48,8 @@ public class PlayerController : MonoBehaviour
     public float CurrentMoveSpeed => stats.moveSpeed + moveSpeedModifier;
     public int CurrentMaxHealth => stats.maxHealth + maxHealthModifier;
     public int CurrentAttackDamage => stats.attackDamage + attackDamageModifier;
+    public int CurrentDaggerDamage => stats.daggerDamage + daggerDamageModifier;
+    public float CurrentDaggerCooldown => Mathf.Max(0, stats.daggerCooldown - daggerCooldownModifier);
     public float CurrentDecoyCooldown => Mathf.Max(0, stats.decoyCooldown - decoyCooldownModifier);
     public float CurrentDecoyDuration => stats.decoyDuration + decoyDurationModifier;
 
@@ -71,6 +83,18 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        // Cooldown da adaga
+        if (isDaggerOnCooldown)
+        {
+            daggerCooldownTimer -= Time.deltaTime;
+            if (daggerCooldownTimer <= 0)
+            {
+                isDaggerOnCooldown = false;
+                Debug.Log("🗡️ Skill Adaga pronta!");
+            }
+        }
+
+        // Cooldown do decoy
         if (isDecoyOnCooldown)
         {
             decoyCooldownTimer -= Time.deltaTime;
@@ -124,6 +148,11 @@ public class PlayerController : MonoBehaviour
         {
             UseDecoy();
         }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2) && !isDaggerOnCooldown)
+        {
+            ThrowDagger();
+        }
     }
 
     void FixedUpdate()
@@ -165,6 +194,42 @@ public class PlayerController : MonoBehaviour
             yield return new WaitForSeconds(remainingTime);
         }
         isAttacking = false;
+    }
+
+    private void ThrowDagger()
+    {
+        if (daggerPrefab == null)
+        {
+            Debug.LogError("⚠️ Prefab da adaga não foi atribuído no PlayerController!");
+            return;
+        }
+
+        isDaggerOnCooldown = true;
+        daggerCooldownTimer = CurrentDaggerCooldown;
+        Debug.Log($"🗡️ Adaga lançada! Cooldown de {CurrentDaggerCooldown}s iniciado.");
+
+        // Calcula a posição de spawn ligeiramente à frente do player
+        Vector3 spawnPosition = transform.position + (Vector3)lastDirection * daggerSpawnOffset;
+
+        // Instancia a adaga
+        GameObject daggerInstance = Instantiate(daggerPrefab, spawnPosition, Quaternion.identity);
+
+        // Inicializa o script da adaga
+        DaggerProjectile daggerScript = daggerInstance.GetComponent<DaggerProjectile>();
+        if (daggerScript != null)
+        {
+            daggerScript.Initialize(lastDirection, stats.daggerSpeed, CurrentDaggerDamage, stats.daggerLifetime);
+        }
+        else
+        {
+            Debug.LogError("⚠️ O prefab da adaga está sem o script DaggerProjectile.cs!");
+        }
+
+        // Reproduz o som de lançamento
+        if (AudioManager.Instance != null && daggerThrowSound != null)
+        {
+            AudioManager.Instance.PlaySound(daggerThrowSound, transform.position, 1f);
+        }
     }
 
     private GameObject GetHitboxForDirection(Vector2 direction)
@@ -252,6 +317,8 @@ public class PlayerController : MonoBehaviour
         moveSpeedModifier = 0f;
         maxHealthModifier = 0;
         attackDamageModifier = 0;
+        daggerDamageModifier = 0;
+        daggerCooldownModifier = 0f;
         decoyCooldownModifier = 0f;
         decoyDurationModifier = 0f;
         Debug.Log("🔄 Modificadores de stats resetados!");

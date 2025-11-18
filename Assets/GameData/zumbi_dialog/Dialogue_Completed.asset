@@ -18,5 +18,8 @@ MonoBehaviour:
   - name: Zumbi
     text: "Obrigado, camarada, a recupera\xE7\xE3o \xE9 de 9 meses, mas pelo menos
       vida eu terei"
+  - name: Zumbi
+    text: "Se quiser ser um guerreiro melhor, fale com o Ragnar, siga o muro do cemit\xE9rio,
+      voc\xEA ir\xE1 encontr\xE1-lo."
   - name: Goblin
-    text: "Vai nascer de novo? Eu j\xE1 enjoei de voc\xEA, at\xE9 mais"
+    text: "Vou procurar esse bunda mole ent\xE3o"

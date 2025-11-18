@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: Mouse
   m_EditorClassIdentifier: Assembly-CSharp::MonsterStats
   maxHealth: 3
-  moveSpeed: 2
-  attackDamage: 2
-  detectionRadius: 3
+  moveSpeed: 4
+  attackDamage: 1
+  detectionRadius: 5
   attackRadius: 1
+  stopDistance: 0.8
   attackCooldown: 3
-  attackHitboxDelay: 0.2
+  attackHitboxDelay: 0.5
   attackHitboxActiveTime: 0.3
+  attackRecovery: 0.8
   knockbackForce: 3
   knockbackDuration: 0.4
   flashDuration: 0.1

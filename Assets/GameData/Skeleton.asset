@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Skeleton
   m_EditorClassIdentifier: Assembly-CSharp::MonsterStats
   maxHealth: 3
-  moveSpeed: 2
+  moveSpeed: 4
   attackDamage: 2
   detectionRadius: 8
   attackRadius: 1

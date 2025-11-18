@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4725ba4077e60cc488ed5b15b2e134c1, type: 3}
   m_Name: Slime-Boss
   m_EditorClassIdentifier: Assembly-CSharp::BossSlimeStats
-  maxHealth: 5
+  maxHealth: 10
   detectionRange: 6
-  attackDamage: 2
+  attackDamage: 4
   attackCastTime: 0.45
   attackActiveDuration: 0.45
   maxAttackRadius: 2

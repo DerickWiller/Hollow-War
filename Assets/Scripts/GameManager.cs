@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
             SceneManager.sceneLoaded += OnSceneLoaded;
+             UIManager.Instance.ShowGlobalMessage("Fale com o aldeão, os NPC's irão guiar você", 5.0f);
         }
         else
         {
@@ -171,6 +172,8 @@ public class GameManager : MonoBehaviour
 
             coracoesUI[i].sprite = (i < vidasAtuais) ? coracaoCheioSprite : coracaoVazioSprite;
         }
+
+        
     }
 
     void GameOver()

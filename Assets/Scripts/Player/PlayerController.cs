@@ -19,10 +19,12 @@ public class PlayerController : MonoBehaviour
     [Range(0f, 2f)]
     [SerializeField] private float footstepVolume = 0.5f;
 
-    [Header("Skill: Dagger")]
+    [Header("Skill: Dagger (Pedra)")]
     [SerializeField] private GameObject daggerPrefab;
     [SerializeField] private float daggerSpawnOffset = 0.5f;
     [SerializeField] private AudioClip daggerThrowSound;
+    [Tooltip("Item necessário no inventário para lançar adagas/pedras")]
+    [SerializeField] private ItemData requiredStoneItem;
     
     private float daggerCooldownTimer = 0f;
     private bool isDaggerOnCooldown = false;
@@ -59,6 +61,7 @@ public class PlayerController : MonoBehaviour
 
     // Componentes e Variáveis
     private Rigidbody2D rb;
+    private Inventory inventory; // 🪨 Referência ao inventário
     private Vector2 movementInput;
     private Vector2 lastDirection = new Vector2(1, 1);
     private bool isAttacking = false;
@@ -68,6 +71,12 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        inventory = GetComponent<Inventory>(); // 🪨 Pega o componente Inventory
+
+        if (inventory == null)
+        {
+            Debug.LogError("⚠️ Componente Inventory não encontrado no Player! O sistema de adagas não funcionará corretamente.");
+        }
 
         footstepAudioSource = gameObject.AddComponent<AudioSource>();
         footstepAudioSource.clip = footstepLoop;
@@ -139,7 +148,7 @@ public class PlayerController : MonoBehaviour
 
         OnMove?.Invoke(movementInput);
 
-        // 🎯 MUDANÇA: Ataque com clique esquerdo do mouse
+        // 🎯 Ataque com clique esquerdo do mouse
         if (Input.GetMouseButtonDown(0))
         {
             StartCoroutine(AttackCoroutine());
@@ -150,7 +159,7 @@ public class PlayerController : MonoBehaviour
             UseDecoy();
         }
 
-        // 🎯 Adaga com clique direito do mouse
+        // 🪨 Adaga/Pedra com clique direito do mouse (requer pedra no inventário)
         if (Input.GetMouseButtonDown(1) && !isDaggerOnCooldown)
         {
             ThrowDagger();
@@ -194,7 +203,7 @@ public class PlayerController : MonoBehaviour
     {
         isAttacking = true;
         
-        // 🎯 MUDANÇA: Calcula a direção do mouse em relação ao jogador
+        // 🎯 Calcula a direção do mouse em relação ao jogador
         Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.z = 0; // Garante que o Z seja 0 (jogo 2D)
         
@@ -240,11 +249,39 @@ public class PlayerController : MonoBehaviour
 
     private void ThrowDagger()
     {
+        // 🪨 VERIFICAÇÃO: Verifica se o jogador tem o item necessário no inventário
+        if (requiredStoneItem == null)
+        {
+            Debug.LogError("⚠️ ItemData 'requiredStoneItem' não foi atribuído no Inspector!");
+            return;
+        }
+
+        if (inventory == null)
+        {
+            Debug.LogError("⚠️ Inventário não encontrado no Player!");
+            return;
+        }
+
+        if (!inventory.HasItem(requiredStoneItem))
+        {
+            Debug.Log("🪨 Você precisa de uma pedra no inventário para lançar!");
+            
+            // Mensagem na tela para o jogador
+            if (UIManager.Instance != null)
+            {
+                UIManager.Instance.ShowGlobalMessage("Você precisa de uma pedra para lançar!", 2f);
+            }
+            return;
+        }
+
         if (daggerPrefab == null)
         {
             Debug.LogError("⚠️ Prefab da adaga não foi atribuído no PlayerController!");
             return;
         }
+
+        // 🪨 Remove a pedra do inventário
+        inventory.RemoveItem(requiredStoneItem);
 
         // 🎯 Calcula a direção do mouse em relação ao jogador
         Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -260,12 +297,12 @@ public class PlayerController : MonoBehaviour
 
         isDaggerOnCooldown = true;
         daggerCooldownTimer = CurrentDaggerCooldown;
-        Debug.Log($"🗡️ Adaga lançada na direção do mouse! Cooldown de {CurrentDaggerCooldown}s iniciado.");
+        Debug.Log($"🪨 Pedra lançada na direção do mouse! Cooldown de {CurrentDaggerCooldown}s iniciado.");
 
         // Calcula a posição de spawn ligeiramente à frente do player na direção do mouse
         Vector3 spawnPosition = transform.position + (Vector3)directionToMouse * daggerSpawnOffset;
 
-        // Instancia a adaga
+        // Instancia a adaga/pedra
         GameObject daggerInstance = Instantiate(daggerPrefab, spawnPosition, Quaternion.identity);
 
         // Inicializa o script da adaga com a direção do mouse

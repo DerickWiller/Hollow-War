@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3525983619216891982}
   - component: {fileID: 2853476577335155890}
   - component: {fileID: 6928395023592734794}
+  - component: {fileID: 8498965742102087482}
+  - component: {fileID: 3694243322998353462}
   m_Layer: 0
   m_Name: Pedra_item
   m_TagString: Untagged
@@ -151,3 +153,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemPickup
   itemToGive: {fileID: 11400000, guid: 42f9e115e086c054593304b6205487b3, type: 2}
+--- !u!114 &8498965742102087482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5734497216384065560}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 576838ee3ad112347b2b7fada43fa4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemHighlight
+  glowColor: {r: 1, g: 1, b: 0, a: 1}
+  glowIntensity: 0.5
+  glowPulseSpeed: 2
+  minScale: 0.9
+  maxScale: 1.1
+  scalePulseSpeed: 1.5
+--- !u!114 &3694243322998353462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5734497216384065560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9c8e864dec4b845a59f40b6ef08492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemHighlightEmissive
+  emissionColor: {r: 1, g: 0.9, b: 0, a: 1}
+  minEmissionIntensity: 0.5
+  maxEmissionIntensity: 2
+  emissionPulseSpeed: 2
+  minScale: 0.95
+  maxScale: 1.15
+  scalePulseSpeed: 1.5
+  enableRotation: 0
+  rotationSpeed: 30

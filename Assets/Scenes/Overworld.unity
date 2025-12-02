@@ -2694,6 +2694,7 @@ GameObject:
   - component: {fileID: 406848775}
   - component: {fileID: 406848774}
   - component: {fileID: 406848773}
+  - component: {fileID: 406848777}
   m_Layer: 0
   m_Name: Martelo
   m_TagString: Untagged
@@ -2833,6 +2834,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 914128485}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &406848777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406848772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9c8e864dec4b845a59f40b6ef08492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemHighlightEmissive
+  emissionColor: {r: 1, g: 0.9, b: 0, a: 1}
+  minEmissionIntensity: 0.5
+  maxEmissionIntensity: 2
+  emissionPulseSpeed: 2
+  minScale: 0.95
+  maxScale: 1.15
+  scalePulseSpeed: 1.5
+  enableRotation: 0
+  rotationSpeed: 30
 --- !u!1 &410336670 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 735790250100822767, guid: b99bc11f846fa44ad89862f06b25a861, type: 3}
@@ -4989,6 +5011,7 @@ GameObject:
   - component: {fileID: 664278163}
   - component: {fileID: 664278162}
   - component: {fileID: 664278161}
+  - component: {fileID: 664278165}
   m_Layer: 0
   m_Name: Semete_Item
   m_TagString: Untagged
@@ -5128,6 +5151,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 914128485}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &664278165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664278160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9c8e864dec4b845a59f40b6ef08492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemHighlightEmissive
+  emissionColor: {r: 1, g: 0.9, b: 0, a: 1}
+  minEmissionIntensity: 0.5
+  maxEmissionIntensity: 2
+  emissionPulseSpeed: 2
+  minScale: 0.95
+  maxScale: 1.15
+  scalePulseSpeed: 1.5
+  enableRotation: 0
+  rotationSpeed: 30
 --- !u!1001 &671571985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6680,6 +6724,7 @@ GameObject:
   - component: {fileID: 825435073}
   - component: {fileID: 825435072}
   - component: {fileID: 825435071}
+  - component: {fileID: 825435075}
   m_Layer: 0
   m_Name: Martelo
   m_TagString: Untagged
@@ -6819,6 +6864,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 914128485}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &825435075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825435070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9c8e864dec4b845a59f40b6ef08492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemHighlightEmissive
+  emissionColor: {r: 1, g: 0.9, b: 0, a: 1}
+  minEmissionIntensity: 0.5
+  maxEmissionIntensity: 2
+  emissionPulseSpeed: 2
+  minScale: 0.95
+  maxScale: 1.15
+  scalePulseSpeed: 1.5
+  enableRotation: 0
+  rotationSpeed: 30
 --- !u!4 &829362882 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4507629042203044888, guid: 7b200378bb03a41f1b5aba8ef1c3d857, type: 3}
@@ -7545,7 +7611,6 @@ Transform:
   - {fileID: 1691767985}
   - {fileID: 406848776}
   - {fileID: 1568923869}
-  - {fileID: 1090131107}
   - {fileID: 1256120833}
   - {fileID: 2118071413}
   m_Father: {fileID: 0}
@@ -8786,37 +8851,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082710031}
   m_CullTransparentMesh: 1
---- !u!1 &1090131106
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1090131107}
-  m_Layer: 0
-  m_Name: SpriteHighlight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1090131107
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1090131106}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 914128485}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1096835699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11487,6 +11521,7 @@ GameObject:
   - component: {fileID: 1568923868}
   - component: {fileID: 1568923867}
   - component: {fileID: 1568923866}
+  - component: {fileID: 1568923870}
   m_Layer: 0
   m_Name: Dente
   m_TagString: Untagged
@@ -11626,6 +11661,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 914128485}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1568923870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568923865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9c8e864dec4b845a59f40b6ef08492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemHighlightEmissive
+  emissionColor: {r: 1, g: 0.9, b: 0, a: 1}
+  minEmissionIntensity: 0.5
+  maxEmissionIntensity: 2
+  emissionPulseSpeed: 2
+  minScale: 0.95
+  maxScale: 1.15
+  scalePulseSpeed: 1.5
+  enableRotation: 0
+  rotationSpeed: 30
 --- !u!1001 &1571755667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12334,6 +12390,7 @@ GameObject:
   - component: {fileID: 1669391076}
   - component: {fileID: 1669391075}
   - component: {fileID: 1669391074}
+  - component: {fileID: 1669391077}
   m_Layer: 0
   m_Name: Martelo (1)
   m_TagString: Untagged
@@ -12473,6 +12530,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1669391077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669391072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9c8e864dec4b845a59f40b6ef08492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemHighlightEmissive
+  emissionColor: {r: 1, g: 0.9, b: 0, a: 1}
+  minEmissionIntensity: 0.5
+  maxEmissionIntensity: 2
+  emissionPulseSpeed: 2
+  minScale: 0.95
+  maxScale: 1.15
+  scalePulseSpeed: 1.5
+  enableRotation: 0
+  rotationSpeed: 30
 --- !u!1001 &1678663503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12599,6 +12677,7 @@ GameObject:
   - component: {fileID: 1691767988}
   - component: {fileID: 1691767987}
   - component: {fileID: 1691767986}
+  - component: {fileID: 1691767989}
   m_Layer: 0
   m_Name: Martelo (2)
   m_TagString: Untagged
@@ -12738,6 +12817,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1691767989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691767984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9c8e864dec4b845a59f40b6ef08492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemHighlightEmissive
+  emissionColor: {r: 1, g: 0.9, b: 0, a: 1}
+  minEmissionIntensity: 0.5
+  maxEmissionIntensity: 2
+  emissionPulseSpeed: 2
+  minScale: 0.95
+  maxScale: 1.15
+  scalePulseSpeed: 1.5
+  enableRotation: 0
+  rotationSpeed: 30
 --- !u!1001 &1696549413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13772,6 +13872,7 @@ GameObject:
   - component: {fileID: 1805343342}
   - component: {fileID: 1805343341}
   - component: {fileID: 1805343340}
+  - component: {fileID: 1805343344}
   m_Layer: 0
   m_Name: Martelo
   m_TagString: Untagged
@@ -13911,6 +14012,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 914128485}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1805343344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805343339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9c8e864dec4b845a59f40b6ef08492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemHighlightEmissive
+  emissionColor: {r: 1, g: 0.9, b: 0, a: 1}
+  minEmissionIntensity: 0.5
+  maxEmissionIntensity: 2
+  emissionPulseSpeed: 2
+  minScale: 0.95
+  maxScale: 1.15
+  scalePulseSpeed: 1.5
+  enableRotation: 0
+  rotationSpeed: 30
 --- !u!1001 &1808317114
 PrefabInstance:
   m_ObjectHideFlags: 0

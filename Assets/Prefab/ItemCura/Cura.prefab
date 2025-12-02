@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3907165446063718791}
   - component: {fileID: 7145113102539632098}
   - component: {fileID: 6505572938200646121}
+  - component: {fileID: 345337434278380227}
   m_Layer: 0
   m_Name: Cura
   m_TagString: Untagged
@@ -143,3 +144,24 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1
+--- !u!114 &345337434278380227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351643896775245539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9c8e864dec4b845a59f40b6ef08492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemHighlightEmissive
+  emissionColor: {r: 1, g: 0.9, b: 0, a: 1}
+  minEmissionIntensity: 0.5
+  maxEmissionIntensity: 2
+  emissionPulseSpeed: 2
+  minScale: 0.95
+  maxScale: 1.15
+  scalePulseSpeed: 1.5
+  enableRotation: 0
+  rotationSpeed: 30

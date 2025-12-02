@@ -54,6 +54,27 @@ public class UIManager : MonoBehaviour
         StartCoroutine(DisplayMessageRoutine(message, actualDuration));
     }
 
+    /// <summary>
+    /// Esconde imediatamente a mensagem global, interrompendo qualquer timer ativo.
+    /// </summary>
+    public void HideGlobalMessage()
+    {
+        if (globalMessageText == null) return;
+
+        // Para todas as coroutines de mensagem
+        StopAllCoroutines();
+
+        // Desativa o painel
+        GameObject panel = globalMessageText.transform.parent.gameObject;
+        if (panel != null)
+        {
+            panel.SetActive(false);
+        }
+
+        // Limpa o texto
+        globalMessageText.text = "";
+    }
+
     IEnumerator DisplayMessageRoutine(string message, float duration)
     {
         GameObject panel = globalMessageText.transform.parent.gameObject;

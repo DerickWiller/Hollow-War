@@ -27,10 +27,14 @@ public class PlayerInteraction : MonoBehaviour
 
         if (show)
         {
-            // Duração alta para manter o prompt na tela (999s)
+            // Duração alta para manter o prompt na tela (3s é suficiente)
             UIManager.Instance.ShowGlobalMessage(message, 3.0f); 
         }
-       
+        else
+        {
+            // Limpa a mensagem imediatamente
+            UIManager.Instance.HideGlobalMessage();
+        }
     }
 
     void Update()
@@ -38,14 +42,16 @@ public class PlayerInteraction : MonoBehaviour
         // Lógica de interação com 'E'
         if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
         {
-            // 1. O IInteractable chama Interact(inventory).
-            //    -> Se o item estiver faltando, o NPCQuest/BridgeRepair exibirá a mensagem de "caixinha" correta.
+            // Limpa o prompt ANTES da interação
+            UpdateInteractionPrompt(false);
+            
+            // O IInteractable chama Interact(inventory).
+            // Se o item for coletado, ele será destruído e automaticamente
+            // sairá do trigger, limpando a referência
             currentInteractable.Interact(inventory);
             
-            // 2. Limpar o prompt de Interação
-            //    Após a interação (diálogo, falha na entrega, sucesso), o prompt "Pressione 'E'" deve sumir, 
-            //    deixando a caixa livre para exibir apenas a mensagem de feedback da Quest.
-            UpdateInteractionPrompt(false); 
+            // Limpa a referência local também
+            currentInteractable = null;
         }
 
         // Lógica para mostrar inventário com 'I'
@@ -65,10 +71,9 @@ public class PlayerInteraction : MonoBehaviour
         {
             currentInteractable = interactable;
             
-            // 🌟 Exibe a mensagem de interação na tela
+            // Exibe a mensagem de interação na tela
             string prompt = currentInteractable.GetPromptMessage();
-            // A mensagem completa inclui a instrução para o jogador
-            UpdateInteractionPrompt(true,  prompt); 
+            UpdateInteractionPrompt(true, prompt); 
         }
     }
 
@@ -78,7 +83,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             currentInteractable = null;
             
-            // 🌟 Limpa a mensagem de interação da tela
+            // Limpa a mensagem de interação da tela
             UpdateInteractionPrompt(false);
         }
     }

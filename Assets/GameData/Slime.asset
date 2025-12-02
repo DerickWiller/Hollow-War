@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Slime
   m_EditorClassIdentifier: Assembly-CSharp::MonsterStats
   maxHealth: 3
-  moveSpeed: 3
-  attackDamage: 2
+  moveSpeed: 4
+  attackDamage: 3
   detectionRadius: 7
   attackRadius: 1
   stopDistance: 0.8

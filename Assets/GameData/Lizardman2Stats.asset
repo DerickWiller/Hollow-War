@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Lizardman2Stats
   m_EditorClassIdentifier: Assembly-CSharp::MonsterStats
   maxHealth: 3
-  moveSpeed: 3
-  attackDamage: 1
+  moveSpeed: 5
+  attackDamage: 3
   detectionRadius: 8
   attackRadius: 1.2
   stopDistance: 0.8

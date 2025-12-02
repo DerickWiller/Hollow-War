@@ -244,8 +244,8 @@ MonoBehaviour:
   textoPrologo: {fileID: 527189874}
   painelFinal: {fileID: 769914978}
   audioIntro: {fileID: 1202612886}
-  tempoTextoInicial: 2
-  tempoPrologo: 1
+  tempoTextoInicial: 5
+  tempoPrologo: 13
 --- !u!1 &527189872
 GameObject:
   m_ObjectHideFlags: 0

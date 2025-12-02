@@ -46,7 +46,7 @@ O objetivo do jogo é demonstrar, na prática, a implementação de sistemas fun
 
 1. Baixe o arquivo
 2. Extraia a pasta
-3. Execute o arquivo principal (`HollowWar.exe`, por exemplo)
+3. Execute o arquivo principal (`HollowWar.exe`)
 
 ### 🧑‍💻 Através do Código-Fonte
 

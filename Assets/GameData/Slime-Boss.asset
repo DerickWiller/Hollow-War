@@ -18,4 +18,4 @@ MonoBehaviour:
   attackCastTime: 0.45
   attackActiveDuration: 0.45
   maxAttackRadius: 2
-  attackCooldown: 3
+  attackCooldown: 4

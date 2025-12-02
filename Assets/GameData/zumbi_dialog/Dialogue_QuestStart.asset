@@ -21,8 +21,8 @@ MonoBehaviour:
   - name: Goblin
     text: Mas vou quebrar essa, onde eu encontro essa erva ai?
   - name: Zumbi
-    text: "V\xE1 at\xE9 o oeste da pradaria, essa semente \xE9 vigiada pelos Charmanders,
-      escravos dos Trolls, tome cuidado, meu filho"
+    text: "V\xE1 at\xE9 a outra parte do cemit\xE9rio, essa semente \xE9 vigiada
+      por slimes de fogo, tome cuidado, meu filho"
   - name: Goblin
     text: "Seu filho \xE9 outro, larga de papo"
   - name: Goblin
